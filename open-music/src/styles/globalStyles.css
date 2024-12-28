@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:wght@300;400;700&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:wght@300;400;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url(./reset.css);
+@import url(./albums.css);
+@import url(./genres.css);
+@import url(./header.css);
+@import url(./index.css);
+@import url(./price-range.css);
+
+:root {
+    --grey-0:rgba(21,23,26,1);
+    --grey-1:rgba(33,37,41,1);
+    --grey-2:rgba(43,47,51,1);
+    --grey-3:rgba(134,142,150,1);
+    --grey-4:rgba(173,181,189,1);
+    --grey-5:rgba(206,212,218,1);
+    --grey-6:rgba(222,226,230,1);
+    --grey-7:rgba(241,243,245,1);
+    --grey-8:rgba(248,249,250,1);
+    --grey-9:rgba(253,254,255,1);
+    --brand-1:rgba(151,71,255,1);
+
+    --font-weight-1: 600;
+    --font-size-1: 28px;
+    --font-weight-2: 600;
+    --font-size-2: 16px;
+    --font-weight-3: 500;
+    --font-size-3: 16px;
+
+}
+
+body{
+    font-family: "Inter", serif;
+    background-color: var(--grey-8);
+    display: block;
+    margin: auto 8rem;
+
+}

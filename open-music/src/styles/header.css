@@ -1,0 +1,20 @@
+
+.header__contaienr{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.openMusic{
+    font-size: var(--font-size-1);
+    font-weight: var(--font-weight-1);
+}
+
+.icon{
+    background-image: url(../assets/icons/moon.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 20%;
+    height: 2.25rem;
+    width: 2.75rem;
+}

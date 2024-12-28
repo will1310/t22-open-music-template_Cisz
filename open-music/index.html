@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Open Music</title>
+    <link rel="stylesheet" href="./src/styles/globalStyles.css">
+  </head>
+  <body>
+    <!-- CABEÇALHO -->
+    <header class="header">
+      <div class="header__contaienr">
+        <h1 class="openMusic">
+          <span>o</span>pen <span>m</span>usic
+        </h1>
+
+        <button class="icon"></button>
+      </div>
+    </header>
+
+    <!-- CONTEÚDO PRINCIPAL -->
+    <main>
+      <!-- SEÇÃO DE FILTRO POR GENERO -->
+      <section class="generos">
+        <div>
+          <h2 class="genros__Title">Gênero Musical</h2>
+        </div>
+
+        <ul class="generos__lista">
+          <li>Todos</li>
+          <li>Pop</li>
+          <li>MPB</li>
+          <li>Forró</li>
+          <li>Samba</li>
+          <li>Baião</li>
+          <li>Rap</li>
+          <li>Hip-hop</li>
+        </ul>
+      </section>
+
+      <!-- SEÇÃO DE FILTRO POR PREÇO -->
+      <section class="price">
+        <div>
+          <h2 class="price__title" >Definir Preço</h2>
+          <label for="price__difiner">100</label>
+        </div>
+
+        <div>
+          <input type="range" min="10" max="200" step="any" id="price__difiner"/>
+        </div>
+
+        <!-- DESENVOLVA AQUI OS ELEMENTOS DA SEÇÃO -->
+      </section>
+
+      <!-- SEÇÃO DE ALBUNS -->
+      <section class="albums">
+        <div>
+          <h2 class="albums__title">Albuns Encontrados</h2>
+        </div>
+
+        <ul class="albums__list">
+          <li>
+            <img src="../open-music/src/assets/imgs/cover-1.png" alt="album1">
+            <div>
+              <h3>Acabou o Chorare</h3>
+            </div>
+            <div>
+              <p>Novos Baianos</p>
+              <label for="generos__lista">MPB</label>
+            </div>
+            <div>
+              <h3> R$ 137,91</h3>
+              <button>Comprar</button>
+            </div>
+          </li>
+
+          <li>
+            <img src="../open-music/src/assets/imgs/cover-2.png" alt="album2">
+            <div>
+              <h3>The Wall</h3>
+            </div>
+            <div>
+              <p>Pink Floyd</p>
+              <label for="generos__lista">Rock</label>
+            </div>
+            <div>
+              <h3> R$ 123,56</h3>
+              <button>Comprar</button>
+            </div>
+          </li>
+
+          <li>
+            <img src="../open-music/src/assets/imgs/cover-3.png" alt="album3">
+            <div>
+              <h3>To Pimp a Butterfly</h3>
+            </div>
+            <div>
+              <p>Kendrick Lamar</p>
+              <label for="generos__lista">Rap</label>
+            </div>
+            <div>
+              <h3> R$ 102,66</h3>
+              <button>Comprar</button>
+            </div>
+          </li>
+
+          <li>
+            <img src="../open-music/src/assets/imgs/cover-2.png" alt="album2">
+            <div>
+              <h3>The Wall</h3>
+            </div>
+            <div>
+              <p>Pink Floyd</p>
+              <label for="generos__lista">Rock</label>
+            </div>
+            <div>
+              <h3> R$ 123,56</h3>
+              <button>Comprar</button>
+            </div>
+          </li>
+
+          <li>
+            <li>
+              <img src="../open-music/src/assets/imgs/cover-1.png" alt="album1">
+              <div>
+                <h3>Acabou o Chorare</h3>
+              </div>
+              <div>
+                <p>Novos Baianos</p>
+                <label for="generos__lista">MPB</label>
+              </div>
+              <div>
+                <h3> R$ 137,91</h3>
+                <button>Comprar</button>
+              </div>
+          </li>
+
+          <li>
+            <img src="../open-music/src/assets/imgs/cover-3.png" alt="album3">
+            <div>
+              <h3>To Pimp a Butterfly</h3>
+            </div>
+            <div>
+              <p>Kendrick Lamar</p>
+              <label for="generos__lista">Rap</label>
+            </div>
+            <div>
+              <h3> R$ 102,66</h3>
+              <button>Comprar</button>
+            </div>
+          </li>
+
+        </ul>
+
+        <!-- DESENVOLVA AQUI OS ELEMENTOS DA SEÇÃO -->
+      </section>
+    </main>
+  </body>
+</html>
