@@ -7,17 +7,16 @@
 @import url(./price-range.css);
 
 :root {
-    --grey-0:rgba(21,23,26,1);
-    --grey-1:rgba(33,37,41,1);
-    --grey-2:rgba(43,47,51,1);
-    --grey-3:rgba(134,142,150,1);
-    --grey-4:rgba(173,181,189,1);
-    --grey-5:rgba(206,212,218,1);
-    --grey-6:rgba(222,226,230,1);
-    --grey-7:rgba(241,243,245,1);
-    --grey-8:rgba(248,249,250,1);
-    --grey-9:rgba(253,254,255,1);
-    --brand-1:rgba(151,71,255,1);
+    --grey-1:#15171A;
+    --grey-2:#212529;
+    --grey-3:#2b2f33;
+    --grey-4:#ced4da;
+    --grey-5:#DEE2E6;
+    --grey-6:#F1F3F5;
+    --grey-7:#F8F9FA;
+    --grey-8:#fdfeff;
+    --brand-1:#6F00FF;
+    --brand-2:#8629FF;
 
     --font-weight-1: 600;
     --font-size-1: 28px;
@@ -32,6 +31,6 @@ body{
     font-family: "Inter", serif;
     background-color: var(--grey-8);
     display: block;
-    margin: auto 8rem;
-
+    width: 1024px;
+    margin: auto;
 }

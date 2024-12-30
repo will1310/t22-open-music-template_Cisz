@@ -14,7 +14,9 @@
           <span>o</span>pen <span>m</span>usic
         </h1>
 
-        <button class="icon"></button>
+        <button class="icon">
+          <img src="../open-music/src/assets/icons/moon.svg" alt="Foto de troca de estilo para noturno" id="buttonNightImg">
+        </button>
       </div>
     </header>
 
@@ -23,29 +25,29 @@
       <!-- SEÇÃO DE FILTRO POR GENERO -->
       <section class="generos">
         <div>
-          <h2 class="genros__Title">Gênero Musical</h2>
+          <h2 class="generos__title">Gênero Musical</h2>
         </div>
 
         <ul class="generos__lista">
-          <li>Todos</li>
-          <li>Pop</li>
-          <li>MPB</li>
-          <li>Forró</li>
-          <li>Samba</li>
-          <li>Baião</li>
-          <li>Rap</li>
-          <li>Hip-hop</li>
+          <button class="generos__button celecionado">Todos</button>
+          <button class="generos__button">Pop</button>
+          <button class="generos__button">MPB</button>
+          <button class="generos__button">Forró</button>
+          <button class="generos__button">Samba</button>
+          <button class="generos__button">Baião</button>
+          <button class="generos__button">Rap</button>
+          <button class="generos__button">Hip-hop</button>
         </ul>
       </section>
 
       <!-- SEÇÃO DE FILTRO POR PREÇO -->
       <section class="price">
-        <div>
+        <div class="price__container--valor">
           <h2 class="price__title" >Definir Preço</h2>
-          <label for="price__difiner">100</label>
+          <label class="price__valor" for="price__difiner">Até <span>R$ 100</span></label>
         </div>
 
-        <div>
+        <div class="price__container--input">
           <input type="range" min="10" max="200" step="any" id="price__difiner"/>
         </div>
 
@@ -54,99 +56,98 @@
 
       <!-- SEÇÃO DE ALBUNS -->
       <section class="albums">
-        <div>
+        <div class="albums__container--title">
           <h2 class="albums__title">Albuns Encontrados</h2>
         </div>
 
         <ul class="albums__list">
-          <li>
+          <li class="albums__item">
             <img src="../open-music/src/assets/imgs/cover-1.png" alt="album1">
-            <div>
+            <div class="albums__item--title">
               <h3>Acabou o Chorare</h3>
             </div>
-            <div>
+            <div class="albums__item--info">
               <p>Novos Baianos</p>
               <label for="generos__lista">MPB</label>
             </div>
-            <div>
+            <div class="albums__item--pricing">
               <h3> R$ 137,91</h3>
-              <button>Comprar</button>
+              <button class="albums__buy--button">Comprar</button>
             </div>
           </li>
 
-          <li>
+          <li class="albums__item">
             <img src="../open-music/src/assets/imgs/cover-2.png" alt="album2">
-            <div>
+            <div class="albums__item--title">
               <h3>The Wall</h3>
             </div>
-            <div>
+            <div class="albums__item--info">
               <p>Pink Floyd</p>
               <label for="generos__lista">Rock</label>
             </div>
-            <div>
+            <div class="albums__item--pricing">
               <h3> R$ 123,56</h3>
-              <button>Comprar</button>
+              <button class="albums__buy--button">Comprar</button>
             </div>
           </li>
 
-          <li>
+          <li class="albums__item">
             <img src="../open-music/src/assets/imgs/cover-3.png" alt="album3">
-            <div>
+            <div class="albums__item--title">
               <h3>To Pimp a Butterfly</h3>
             </div>
-            <div>
+            <div class="albums__item--info">
               <p>Kendrick Lamar</p>
               <label for="generos__lista">Rap</label>
             </div>
-            <div>
+            <div class="albums__item--pricing">
               <h3> R$ 102,66</h3>
-              <button>Comprar</button>
+              <button class="albums__buy--button">Comprar</button>
             </div>
           </li>
 
-          <li>
+          <li class="albums__item">
             <img src="../open-music/src/assets/imgs/cover-2.png" alt="album2">
-            <div>
+            <div class="albums__item--title">
               <h3>The Wall</h3>
             </div>
-            <div>
+            <div class="albums__item--info">
               <p>Pink Floyd</p>
               <label for="generos__lista">Rock</label>
             </div>
-            <div>
+            <div class="albums__item--pricing">
               <h3> R$ 123,56</h3>
-              <button>Comprar</button>
+              <button class="albums__buy--button">Comprar</button>
             </div>
           </li>
 
-          <li>
-            <li>
+          <li class="albums__item">
               <img src="../open-music/src/assets/imgs/cover-1.png" alt="album1">
-              <div>
+              <div class="albums__item--title">
                 <h3>Acabou o Chorare</h3>
               </div>
-              <div>
+              <div class="albums__item--info">
                 <p>Novos Baianos</p>
                 <label for="generos__lista">MPB</label>
               </div>
-              <div>
+              <div class="albums__item--pricing">
                 <h3> R$ 137,91</h3>
-                <button>Comprar</button>
+                <button class="albums__buy--button">Comprar</button>
               </div>
           </li>
 
-          <li>
+          <li class="albums__item">
             <img src="../open-music/src/assets/imgs/cover-3.png" alt="album3">
-            <div>
+            <div class="albums__item--title">
               <h3>To Pimp a Butterfly</h3>
             </div>
-            <div>
+            <div class="albums__item--info">
               <p>Kendrick Lamar</p>
               <label for="generos__lista">Rap</label>
             </div>
-            <div>
+            <div class="albums__item--pricing">
               <h3> R$ 102,66</h3>
-              <button>Comprar</button>
+              <button class="albums__buy--button">Comprar</button>
             </div>
           </li>
 

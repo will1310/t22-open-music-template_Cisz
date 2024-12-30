@@ -1,20 +1,26 @@
-
+.header{
+    top: 0;
+    z-index: 1;
+    position: sticky;
+    background-color: var(--grey-8);
+}
 .header__contaienr{
     display: flex;
     justify-content: space-between;
-
+    padding: 1.6rem 0;
+    border-bottom: 3px solid var(--brand-2);
 }
 
 .openMusic{
-    font-size: var(--font-size-1);
+    font-size: 40px;
     font-weight: var(--font-weight-1);
 }
 
+.openMusic > span{
+    color: var(--brand-1);
+}
+
 .icon{
-    background-image: url(../assets/icons/moon.svg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 20%;
     height: 2.25rem;
     width: 2.75rem;
 }
