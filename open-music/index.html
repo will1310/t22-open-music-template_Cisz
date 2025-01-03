@@ -30,13 +30,13 @@
 
         <ul class="generos__lista">
           <button class="generos__button celecionado">Todos</button>
-          <button class="generos__button">Pop</button>
-          <button class="generos__button">MPB</button>
-          <button class="generos__button">Forró</button>
-          <button class="generos__button">Samba</button>
-          <button class="generos__button">Baião</button>
-          <button class="generos__button">Rap</button>
-          <button class="generos__button">Hip-hop</button>
+          <button class="generos__button"><p>Pop</p></button>
+          <button class="generos__button"><p>MPB</p></button>
+          <button class="generos__button"><p>Forró</p></button>
+          <button class="generos__button"><p>Samba</p></button>
+          <button class="generos__button"><p>Baião</p></button>
+          <button class="generos__button"><p>Rap</p></button>
+          <button class="generos__button"><p>Hip-hop</p></button>
         </ul>
       </section>
 
@@ -48,7 +48,7 @@
         </div>
 
         <div class="price__container--input">
-          <input type="range" min="10" max="200" step="any" id="price__difiner"/>
+          <input type="range" min="0" max="150" value="150" id="price__difiner"/>
         </div>
 
         <!-- DESENVOLVA AQUI OS ELEMENTOS DA SEÇÃO -->
@@ -61,100 +61,13 @@
         </div>
 
         <ul class="albums__list">
-          <li class="albums__item">
-            <img src="../open-music/src/assets/imgs/cover-1.png" alt="album1">
-            <div class="albums__item--title">
-              <h3>Acabou o Chorare</h3>
-            </div>
-            <div class="albums__item--info">
-              <p>Novos Baianos</p>
-              <label for="generos__lista">MPB</label>
-            </div>
-            <div class="albums__item--pricing">
-              <h3> R$ 137,91</h3>
-              <button class="albums__buy--button">Comprar</button>
-            </div>
-          </li>
-
-          <li class="albums__item">
-            <img src="../open-music/src/assets/imgs/cover-2.png" alt="album2">
-            <div class="albums__item--title">
-              <h3>The Wall</h3>
-            </div>
-            <div class="albums__item--info">
-              <p>Pink Floyd</p>
-              <label for="generos__lista">Rock</label>
-            </div>
-            <div class="albums__item--pricing">
-              <h3> R$ 123,56</h3>
-              <button class="albums__buy--button">Comprar</button>
-            </div>
-          </li>
-
-          <li class="albums__item">
-            <img src="../open-music/src/assets/imgs/cover-3.png" alt="album3">
-            <div class="albums__item--title">
-              <h3>To Pimp a Butterfly</h3>
-            </div>
-            <div class="albums__item--info">
-              <p>Kendrick Lamar</p>
-              <label for="generos__lista">Rap</label>
-            </div>
-            <div class="albums__item--pricing">
-              <h3> R$ 102,66</h3>
-              <button class="albums__buy--button">Comprar</button>
-            </div>
-          </li>
-
-          <li class="albums__item">
-            <img src="../open-music/src/assets/imgs/cover-2.png" alt="album2">
-            <div class="albums__item--title">
-              <h3>The Wall</h3>
-            </div>
-            <div class="albums__item--info">
-              <p>Pink Floyd</p>
-              <label for="generos__lista">Rock</label>
-            </div>
-            <div class="albums__item--pricing">
-              <h3> R$ 123,56</h3>
-              <button class="albums__buy--button">Comprar</button>
-            </div>
-          </li>
-
-          <li class="albums__item">
-              <img src="../open-music/src/assets/imgs/cover-1.png" alt="album1">
-              <div class="albums__item--title">
-                <h3>Acabou o Chorare</h3>
-              </div>
-              <div class="albums__item--info">
-                <p>Novos Baianos</p>
-                <label for="generos__lista">MPB</label>
-              </div>
-              <div class="albums__item--pricing">
-                <h3> R$ 137,91</h3>
-                <button class="albums__buy--button">Comprar</button>
-              </div>
-          </li>
-
-          <li class="albums__item">
-            <img src="../open-music/src/assets/imgs/cover-3.png" alt="album3">
-            <div class="albums__item--title">
-              <h3>To Pimp a Butterfly</h3>
-            </div>
-            <div class="albums__item--info">
-              <p>Kendrick Lamar</p>
-              <label for="generos__lista">Rap</label>
-            </div>
-            <div class="albums__item--pricing">
-              <h3> R$ 102,66</h3>
-              <button class="albums__buy--button">Comprar</button>
-            </div>
-          </li>
-
+          
         </ul>
 
         <!-- DESENVOLVA AQUI OS ELEMENTOS DA SEÇÃO -->
       </section>
     </main>
+    <script src="./src/scripts/inputRange.js"></script>
+    <script src="./src/scripts/index.js" type="module"></script>
   </body>
 </html>
