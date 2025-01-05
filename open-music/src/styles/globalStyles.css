@@ -15,6 +15,7 @@
     --grey-6:#F1F3F5;
     --grey-7:#F8F9FA;
     --grey-8:#fdfeff;
+    
     --brand-1:#6F00FF;
     --brand-2:#8629FF;
 
@@ -31,6 +32,6 @@ body{
     font-family: "Inter", serif;
     background-color: var(--grey-8);
     display: block;
-    width: 1024px;
+    width: 1120px;
     margin: auto;
 }

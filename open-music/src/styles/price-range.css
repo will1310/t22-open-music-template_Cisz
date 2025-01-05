@@ -3,7 +3,6 @@
     flex-direction: column;
     gap: 19px;
     padding: 32px 0px;
-    
 }
 
 .price__container--valor{
@@ -14,11 +13,13 @@
 .price__title{
     font-size: 24px;
     font-weight: 600;
+    color: var(--grey-2);
 }
 
 .price__valor{
     font-size: 22px;
     font-weight: 600;
+    color: var(--grey-2);
 }
 
 .price__valor > span{

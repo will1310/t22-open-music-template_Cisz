@@ -5,8 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Open Music</title>
     <link rel="stylesheet" href="./src/styles/globalStyles.css">
+    <script src="./src/scripts/theme.js"></script>
+    <script src="./src/scripts/api.js"></script>
   </head>
-  <body>
+  <body class="">
     <!-- CABEÇALHO -->
     <header class="header">
       <div class="header__contaienr">
@@ -44,11 +46,11 @@
       <section class="price">
         <div class="price__container--valor">
           <h2 class="price__title" >Definir Preço</h2>
-          <label class="price__valor" for="price__difiner">Até <span>R$ 100</span></label>
+          <h2 class="price__valor">Até <span>R$<span id="textInputPrice">150</span></span></h2>
         </div>
 
         <div class="price__container--input">
-          <input type="range" min="0" max="150" value="150" id="price__difiner"/>
+          <input type="range" min="1" max="150" value="150" id="price__difiner"/>
         </div>
 
         <!-- DESENVOLVA AQUI OS ELEMENTOS DA SEÇÃO -->

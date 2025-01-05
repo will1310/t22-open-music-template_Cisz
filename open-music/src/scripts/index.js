@@ -1,13 +1,5 @@
 import { applyInputRangeStyle } from "./inputRange.js";
-import { albumList } from "./albumsDatabase.js";
-
-function rotine(){
-    applyInputRangeStyle();
-    gerarAlbums("Todos");
-}
-
-rotine();
-
+import { newDataAlbums } from "./api.js";
 
 const genresButton = document.querySelectorAll(".generos__button");
 
@@ -21,18 +13,33 @@ genresButton.forEach((button) => {
   });
 });
 
-const genre = genresButton.querySelector('p').innerText;
+function rotine(){
+  applyInputRangeStyle();
+}
 
-function gerarAlbums(genero) {
-    const listAlbuns = document.querySelector(".albums__list")
-    listAlbuns.innerHTML = "";
+
+const priceCelecionadoTexto = document.getElementById("textInputPrice")
+const inputPriceDefiner = document.getElementById("price__difiner")
+const containerAlbums = document.querySelector(".albums__list")
+
+
+async function caregarAlbums() {
+  const albums = await newDataAlbums();
+  if (albums) {
+    return albums;
+  }
+  return [];
+}
+
+async function gerarAlbumsAtualizado(price) {
+    containerAlbums.innerHTML = "";
     
-   
-    const filterAlbums = genero === "Todos" ? albumList : albumList.filter(album => album.genre === genre);
+    const listAlbuns = await caregarAlbums();
+    const filterAlbums = listAlbuns.filter(album => parseFloat(album.price) <= price);
 
-    filterAlbums.forEach(album =>{
+    filterAlbums.forEach(album => {
         const albumItems = document.createElement("li")
-        albumItems.className = "albums__item";
+        albumItems.classList.add("albums__item");
 
         albumItems.innerHTML = `
         <img src="${album.img}" alt="Capa do álbum ${album.title}">
@@ -49,6 +56,16 @@ function gerarAlbums(genero) {
             </div>
         `;
 
-        listAlbuns.appendChild(albumItems);
+        containerAlbums.appendChild(albumItems)
     });
 }
+
+const presoDefinido = inputPriceDefiner.addEventListener(("input"), function() {
+    const fodase = priceCelecionadoTexto.textContent = this.value
+    gerarAlbumsAtualizado(parseFloat(fodase))
+}, 300);
+
+
+rotine();
+
+gerarAlbumsAtualizado(parseFloat(inputPriceDefiner.value));

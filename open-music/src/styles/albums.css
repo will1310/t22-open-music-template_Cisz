@@ -22,6 +22,13 @@
     border-radius: 4px;
 }
 
+.albums__item{
+    background-color: var(--grey-7);
+    border-radius: 8px;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
 .albums__item > img {
     width: 308px;
     height: 290px;
@@ -45,7 +52,7 @@
 }
 
 .albums__item--info > p,
-.albums__item--info > label{
+.albums__item--info > h2{
     color: var(--grey-3);
     font-size: 16px;
     font-weight: 400;    
